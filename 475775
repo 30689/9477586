@@ -1,0 +1,10 @@
+my_list = [1, 2, 3]
+
+def process_list(input_list):
+    try:
+        assert len(input_list) >= 3
+        print(f"список містить {len(input_list)} елементів")
+    except AssertionError:
+        print("список повинен містити принаймні 3 елементи")
+
+process_list(my_list)
